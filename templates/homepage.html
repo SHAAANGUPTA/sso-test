@@ -17,7 +17,8 @@
                             </h6>
                         </div>
                         <div class="col-sm-2">
-                            <select class="form-control" name="fleet_selection" id="fleet_selection" style="width: 100%">
+                            <select class="form-control" name="fleet_selection" id="fleet_selection"
+                                style="width: 100%">
                                 <option value="central">Central</option>
                                 <option value="eastern">Eastern</option>
                             </select>
@@ -25,7 +26,9 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <a href="{{ url_base }}{{ url_for('other_page') }}"><font color="blue">Click</font></a>
+                    <a href="{{ url_for('other_page') }}">
+                        <font color="blue">Click</font>
+                    </a>
                     <br>
                     {% for key, value in cookie_data.items() %}
                     {{ key }} - {{ value }} <br>
