@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container-fluid content-row">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card border-dark">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h4>
+                                <p class="header-font">Capacity Summary</p>
+                            </h4>
+                        </div>
+                        <div class="col-sm-2">
+                            <h6>
+                                <p align="right" class="header-font">Select Fleet:</p>
+                            </h6>
+                        </div>
+                        <div class="col-sm-2">
+                            <select class="form-control" name="fleet_selection" id="fleet_selection"
+                                style="width: 100%">
+                                <option value="central">Central</option>
+                                <option value="eastern">Eastern</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    On other page
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
