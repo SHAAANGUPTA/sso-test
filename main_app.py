@@ -7,7 +7,7 @@ LOCAL = False
 class Config:
     
     if not LOCAL:
-        URL_PREFIX = ('https://sales-performancetesting.test.peak.ai/'
+        URL_PREFIX = ('https://sales-adoptimization2005.test.peak.ai/'
                       'app_direct/default')
     else:
         URL_PREFIX = ''
