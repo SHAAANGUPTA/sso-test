@@ -5,13 +5,13 @@ LOCAL = False
 
 
 class Config:
-    
+
     if not LOCAL:
-        URL_PREFIX = ('https://sales-qaadone.beta.peak.ai/'
+        URL_PREFIX = ('https://salesdashboard-solutiondev0301.dev.peak.ai/'
                       'app_direct/default')
     else:
         URL_PREFIX = ''
-    
+
     PORT = 8050
 
 app = Flask(__name__)
@@ -33,7 +33,6 @@ def other_page():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, 
+    app.run(debug=True,
             port=8050,
             host='0.0.0.0')
-            
